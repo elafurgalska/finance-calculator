@@ -1,7 +1,14 @@
 import math
 
+while True:
 # Prompt the user to choose between the two calculators, bond or investment. Use .lower() to ensure no case-sensitivity
-finance_type = input("Welcome to finance calculator! To begin, please choose your calculation from either 'bond' or 'investment': ").lower()
+    finance_type = input("Welcome to finance calculator! To begin, please choose your calculation from either 'bond' or 'investment': ").lower()
+
+# Check if the user entered a valid choice
+    if finance_type in ["investment", "bond"]:
+        break
+    else:
+        print("Invalid finance type. Please choose 'bond' or 'investment'.")
 
 # An if loop for bond and investment calculators
 if finance_type == "investment":
